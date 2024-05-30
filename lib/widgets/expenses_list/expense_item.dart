@@ -21,15 +21,15 @@ class ExpenseItem extends StatelessWidget {
               expense.title,
               style: Theme.of(context).textTheme.titleLarge,
             ),
-            SizedBox(height: 2),
+            const SizedBox(height: 2),
             Row(
               children: [
-                Text('\€${expense.amount.toStringAsFixed(2)}'),
-                Spacer(),
+                Text('€${expense.amount.toStringAsFixed(2)}'),
+                const Spacer(),
                 Row(
                   children: [
                     Icon(categoryIcons[expense.category]),
-                    SizedBox(width: 8),
+                    const SizedBox(width: 8),
                     Text(expense.formattedDate),
                   ],
                 ),
